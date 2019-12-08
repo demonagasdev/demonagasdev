@@ -1,0 +1,166 @@
+* {padding: 0;margin: 0;}
+
+body {
+    
+    font-family: 'Noto Sans';
+    --azul-oscuro: #347AB3;
+    --rosadito-bonito: #FF5751;
+    --azul-clarito: #63BAFF;
+    --verde-clarito: #C7CC3B;
+    --verde-oscuro: #AFB33D;
+}
+
+h2, b {
+    color: var(--rosadito-bonito);
+}
+
+h2 {
+    color:var(--rosadito-bonito);
+}
+
+
+.page-title{
+    font-size: 3rem;
+    margin:.5rem;
+    color:var(--rosadito-bonito);
+}
+
+.nickname{
+    font-size:2.5rem;
+    margin:.5rem;
+    color:#FFF;
+
+}
+
+.nicklink {
+    text-decoration:none;
+    color:#ccc;
+}
+
+.welcome-bgi {
+    background: url(https://images.pexels.com/photos/7368/startup-photos.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    width:100%;
+    height: 100vh;
+}
+
+
+.welcome-flex-container {
+    background-color:rgba(0, 0, 0, 0.301);
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.start-button {
+    background-color: white;
+    color:black;
+    padding: 2rem 3rem 2rem 3rem;
+    margin-top: 6rem;
+    border-radius: 2px;
+    text-align: center;
+    -webkit-box-shadow: 0px 2px 20px -4px rgba(0,0,0,0.74);
+    -moz-box-shadow: 0px 2px 20px -4px rgba(0,0,0,0.74);
+    box-shadow: 0px 2px 20px -4px rgba(0,0,0,0.74);
+    
+}
+
+
+.projects-flex-container {
+    background-color: #fff;
+    display:flex;
+    flex-direction:column;
+    padding:3rem;
+    align-items:space-around;
+    justify-content: center;
+}
+
+.projects-title {
+    color:#000;
+    margin-left:5%;
+    font-size: 2rem;
+}
+
+.projects-tile {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    margin-top:3rem ;
+}
+
+nav {
+    position:fixed;
+    width:100%
+}
+
+.navbar {
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:.5rem;
+    width:100%;
+    height: 200%;   
+    
+}
+
+.navlink {
+    padding:1rem;
+    font-size:1.2rem;
+    text-decoration: none;
+}
+
+a{text-decoration:none;color:white;}
+
+.about-us-first {
+    margin: 2% 5% 2% 5%;
+}
+
+.about-us-first h2 {
+    color:#fff;
+    text-align: center;
+    padding:1rem;
+}
+
+.about-us-first p {
+    color:#fff;
+    text-align: justify;
+    
+}
+
+#about-us {
+    height: 85vh;
+    margin: auto;
+    background-color: var(--azul-oscuro);
+    padding: 5rem;
+}
+
+.auf-flex-one {
+    color:#fff;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    justify-content: stretch;
+    grid-gap: 3rem;
+    text-align: center;
+}
+
+.auf-flex-two {
+    color:#fff;
+    display:flex;
+}
+
+
+@media (max-width: 800px) {
+    .projects-tile {
+        flex-direction:column;
+        justify-content: space-around;
+    }
+    body {
+        color: red;
+    }
+}
